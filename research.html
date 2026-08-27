@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — Zihao Su</title>
+<meta name="description" content="Research on the security and privacy of social and multi-user virtual reality, perception manipulation, ML security, and program analysis for privacy compliance.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">Zihao Su</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="research.html" aria-current="page">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="cv.html">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <h1>Research</h1>
+  <p class="lede">
+    I am a security researcher who specializes in virtual reality. The
+    specialization is the domain, not the method: the same work has required
+    side-channel analysis, static program analysis, machine learning, and
+    human-subjects experiments, and each of those has produced results that
+    stand on their own outside VR.
+  </p>
+  <p>
+    The connecting question is what happens to security and privacy when a
+    system's input is a person's body and its output is that person's
+    perception. Both directions are exploitable. Motion leaks secrets on the
+    way in; rendering can be manipulated on the way out. Once other people are
+    in the same environment, both problems get an adversary.
+  </p>
+
+  <h2>Attacks on social &amp; multi-user VR</h2>
+  <p>
+    Multi-user VR applications broadcast each participant's head and hand
+    motion to everyone else in the room — that is what makes a shared space
+    feel shared. In <strong>Remote Keylogging Attacks in Multi-user VR
+    Applications</strong> (USENIX Security 2024), we showed this broadcast is a
+    side channel: a remote attacker who is merely present in the same virtual
+    room can recover text and passwords a victim types on a virtual keyboard,
+    reconstructed from avatar movement alone. No malware, no compromised
+    headset, no special privileges — just an ordinary participant.
+  </p>
+  <p>
+    The same openness that leaks keystrokes also lets people reach each other.
+    My current work moves from the individual attack to the platform: measuring
+    and detecting <strong>harassment in social VR</strong>, and characterizing
+    <strong>malicious avatars</strong> in the wild on VRChat. Both are
+    first-author projects, and both are as much data and measurement problems
+    as they are security problems — building the datasets, the labeling
+    methodology, and the detection pipelines that let a platform act on what
+    users have been reporting for years.
+  </p>
+
+  <h2>Perception manipulation in VR/AR</h2>
+  <p>
+    A VR application owns the user's entire visual field, which means it can
+    misrepresent the user's own actions back to them. I first showed a concrete
+    instance of this with <strong>2D cursorjacking in VR</strong> (CHI EA
+    2021), redirecting where a user believes they are pointing.
+  </p>
+  <p>
+    The defense side turned out to be more interesting. In <strong>Your Hands
+    Can Tell</strong> (CHI 2025, Honorable Mention), we showed that redirection
+    leaves a signature in the user's own motor behavior: when the rendered hand
+    is subtly displaced from the real one, people compensate, and that
+    compensation is detectable from hand movement alone. A detector on the
+    victim's side needs no cooperation from the application doing the
+    manipulating.
+  </p>
+
+  <h2>Machine learning security</h2>
+  <p>
+    In <strong>Invisible Image Watermarks Are Provably Removable Using
+    Generative AI</strong> (NeurIPS 2024), we showed that the invisible
+    watermarks proposed for provenance and AI-content labeling can be stripped
+    by a regeneration attack: add noise, denoise with a diffusion model, and
+    the watermark is gone while the image stays visually intact — with a
+    theoretical account of why this is inherent rather than an artifact of any
+    one scheme. The paper has become the most cited work I have contributed to,
+    and it shaped how I think about defenses whose security rests on an
+    attacker's assumed inability to regenerate content.
+  </p>
+
+  <h2>Program analysis &amp; privacy compliance</h2>
+  <p>
+    In <strong>CHKPLUG</strong> (NDSS 2023), we built a cross-language code
+    property graph — spanning PHP, JavaScript, HTML, and SQL — to check whether
+    real WordPress plugins actually satisfy their GDPR obligations around
+    personal data: collection, deletion, and disclosure. The interesting
+    difficulty was not the legal text but the plumbing: tracking personal data
+    across language boundaries inside a plugin ecosystem that was never built
+    to be analyzed.
+  </p>
+
+  <h2>How I work</h2>
+  <ul>
+    <li><strong>Attack first, then measure, then defend.</strong> Most of my
+      projects start with a concrete end-to-end attack, then ask how common the
+      precondition actually is in deployed systems, then build the detector.</li>
+    <li><strong>Systems and people in the same study.</strong> Several results
+      only exist because the project ran an instrumented user study alongside
+      the system work — the keylogging attack, the manipulation detector, and
+      the harassment measurement all depend on human data collected under IRB.</li>
+    <li><strong>Build the artifact.</strong> Unity prototypes, analysis
+      pipelines, and datasets, run on compute supported by NAIRR Pilot and NSF
+      ACCESS allocations.</li>
+  </ul>
+
+  <p><a href="publications.html">See the publication list →</a></p>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>Zihao Su · Santa Barbara, CA</span>
+    <span><a href="mailto:zihaosu@ucsb.edu">zihaosu@ucsb.edu</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
