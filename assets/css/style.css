@@ -95,7 +95,9 @@ main p strong, main li strong { color: var(--text); font-weight: 600; }
 
 .lede { font-size: 1.12rem; color: var(--text-soft); }
 
-main { padding: 3rem 0 4rem; }
+/* main also carries .wrap, whose padding shorthand would zero these out —
+   the more specific selector keeps the vertical rhythm. */
+main.wrap { padding-top: 3rem; padding-bottom: 4rem; }
 
 /* ---------- hero ---------- */
 
