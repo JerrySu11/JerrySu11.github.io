@@ -40,5 +40,6 @@ update `career_planning/profile/` first, then reflect the change here.
 - No headshot yet (`assets/img/`).
 - No downloadable CV PDF yet — the existing resume PDF carries a phone number;
   add a scrubbed copy to `assets/files/` and uncomment the link in `cv.html`.
-- Papers under double-blind review are listed without full titles on purpose;
-  see the comment in `publications.html`.
+- Work that is under review or in preparation is deliberately kept off the
+  site — no titles, no "under submission" entries, no expected graduation date.
+  Add papers only once they are accepted.
