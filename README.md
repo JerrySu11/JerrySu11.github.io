@@ -10,18 +10,15 @@ this repository's `main` branch as-is, so a push is a deploy.
 
 | Path | Purpose |
 |------|---------|
-| `index.html` | Landing page — positioning, research threads, selected papers, news |
-| `research.html` | The research narrative in prose |
-| `publications.html` | Full publication list with metrics |
-| `cv.html` | Web CV |
+| `index.html` | Home — intro, links, full publication list, news |
+| `about.html` | About Me — education, awards, grants, teaching, service, skills |
 | `assets/css/style.css` | The entire stylesheet |
 | `assets/img/` | Favicon, and a headshot if one is added |
 | `assets/files/` | Downloadable PDFs (CV) — currently empty |
 | `.nojekyll` | Tells Pages to serve files as-is |
 
-Site chrome (header nav, footer) is duplicated in each page. With four pages
-that is cheaper than adding a build step — when editing the nav, change all
-four.
+Site chrome (header nav, footer) is duplicated in each page. With two pages
+that is cheaper than adding a build step — when editing the nav, change both.
 
 ## Local preview
 
