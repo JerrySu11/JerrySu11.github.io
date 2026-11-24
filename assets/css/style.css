@@ -162,7 +162,7 @@ main.wrap { padding-top: 3rem; padding-bottom: 4rem; }
 /* ---------- CV ---------- */
 
 .entry { margin: 0 0 1.6rem; }
-.entry-head { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; align-items: baseline; }
+.entry-head { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1rem; align-items: baseline; }
 .entry-head h3 { font-family: var(--sans); font-size: 1rem; font-weight: 600; margin: 0; }
 .entry .when { font-size: 0.87rem; color: var(--text-mute); font-variant-numeric: tabular-nums; white-space: nowrap; }
 .entry p, .entry ul { margin: 0.3rem 0 0; font-size: 0.95rem; }
