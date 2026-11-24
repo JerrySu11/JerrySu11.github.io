@@ -143,6 +143,7 @@ main.wrap { padding-top: 3rem; padding-bottom: 4rem; }
 .pub-authors { font-size: 0.92rem; color: var(--text-soft); margin: 0 0 0.4rem; }
 .pub-authors .me { color: var(--text); font-weight: 600; }
 .pub-meta { font-size: 0.88rem; color: var(--text-mute); margin: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
+.pub-impact { font-size: 0.92rem; margin: 0.65rem 0 0; }
 
 .tag {
   display: inline-block; border-radius: 5px; padding: 0.12rem 0.5rem;

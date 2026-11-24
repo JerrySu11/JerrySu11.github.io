@@ -10,7 +10,7 @@ this repository's `main` branch as-is, so a push is a deploy.
 
 | Path | Purpose |
 |------|---------|
-| `index.html` | Home — intro, links, full publication list, news |
+| `index.html` | Home — research interests, links, news, accepted publications and impact |
 | `about.html` | About Me — education, awards, grants, teaching, service, skills |
 | `assets/css/style.css` | The entire stylesheet |
 | `assets/img/` | Favicon, and a headshot if one is added |
@@ -35,8 +35,9 @@ update `career_planning/profile/` first, then reflect the change here.
 ## Things marked for later
 
 - No headshot yet (`assets/img/`).
-- No downloadable CV PDF yet — the existing resume PDF carries a phone number;
-  add a scrubbed copy to `assets/files/` and uncomment the link in `cv.html`.
+- No downloadable CV PDF yet — prepare a public copy that omits private contact
+  details and manuscripts under review before adding it to `assets/files/` and
+  uncommenting the link in `about.html`.
 - Work that is under review or in preparation is deliberately kept off the
   site — no titles, no "under submission" entries, no expected graduation date.
   Add papers only once they are accepted.

@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Zihao Su — Security &amp; Privacy Researcher</title>
-<meta name="description" content="Zihao Su is a PhD candidate in computer security at UC Santa Barbara, working on the security and privacy of social and multi-user virtual reality, ML security, and program analysis.">
+<meta name="description" content="Zihao Su studies security, privacy, and user safety in emerging interactive systems, with a current focus on social virtual reality, at UC Santa Barbara.">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 <meta property="og:title" content="Zihao Su — Security &amp; Privacy Researcher">
-<meta property="og:description" content="PhD candidate at UC Santa Barbara. Security and privacy of social and multi-user VR, ML security, program analysis.">
+<meta property="og:description" content="PhD candidate at UC Santa Barbara studying security, privacy, and user safety in emerging interactive systems, with a current focus on social virtual reality.">
 <meta property="og:type" content="profile">
 </head>
 <body>
@@ -36,24 +36,45 @@
     </p>
 
     <p class="lede">
-      I work on the security and privacy of systems. Most of that work has been in Virtual Reality (e.g., showing that a headset can leak what you type, and that a platform
-      can quietly bend what you perceive).
+      I study security, privacy, and user safety in emerging interactive systems, with a current focus on social virtual reality.
     </p>
     <p>
-      My work spans side-channel attacks, machine learning security, static program analysis, at USENIX Security, NDSS, CHI, and NeurIPS.
+      My work combines systems analysis, empirical measurement, and user studies to investigate information leakage, malicious user-generated content, and harassment.
+    </p>
+    <p>
+      I am interested in extending this work to the security and privacy challenges that arise when AI agents interact with people and other agents on users’ behalf.
     </p>
 
     <ul class="links">
       <li><a href="mailto:zihaosu@ucsb.edu">zihaosu@ucsb.edu</a></li>
-      <li><a href="https://scholar.google.com/citations?user=kZVwaTMAAAAJ&amp;hl=en">Google Scholar</a></li>
+      <li><a href="https://scholar.google.com/citations?user=iBAr8iQAAAAJ&amp;hl=en">Google Scholar</a></li>
       <li><a href="https://github.com/JerrySu11">GitHub</a></li>
     </ul>
   </section>
 
+  <h2 id="news">News</h2>
+  <!-- Keep selected recent updates and notable research impact, newest first. -->
+  <div class="entry">
+    <div class="entry-head"><h3>Joining the <a href="https://www.usenix.org/conference/woot27">WOOT ’27</a> program committee</h3><span class="when">Nov 2026</span></div>
+  </div>
+  <div class="entry">
+    <div class="entry-head"><h3>Awarded an NSF ACCESS Research allocation &mdash; 200,000 ACCESS credits, as Co-PI</h3><span class="when">2026</span></div>
+  </div>
+  <div class="entry">
+    <div class="entry-head"><h3>Honorable Mention Award at CHI 2025 for “Your Hands Can Tell”</h3><span class="when">2025</span></div>
+  </div>
+  <div class="entry">
+    <div class="entry-head"><h3>VR keylogging research led to platform patches and a bug bounty</h3><span class="when">2024</span></div>
+    <p>Valve’s SteamVR and Rec Room shipped patches following our recommended defenses; Rec Room also awarded a bug bounty. <a href="#vr-keylogging">Paper and release notes →</a></p>
+  </div>
+  <div class="entry">
+    <div class="entry-head"><h3>NAIRR Pilot award — $20,000 in cloud credits via CloudBank</h3><span class="when">2024</span></div>
+  </div>
+
   <h2 id="publications">Publications</h2>
 
   <div class="pub">
-    <p class="pub-title">Your Hands Can Tell: Detecting Perception Manipulation in VR Using Hand Movement</p>
+    <p class="pub-title">Your Hands Can Tell: Detecting Redirected Hand Movements in Virtual Reality</p>
     <p class="pub-authors">Md Aashikur Rahman Azim, <span class="me">Zihao Su</span>, Seongkook Heo</p>
     <p class="pub-meta">
       <span class="tag">CHI 2025</span>
@@ -62,12 +83,18 @@
     </p>
   </div>
 
-  <div class="pub">
-    <p class="pub-title">Remote Keylogging Attacks in Multi-user VR Applications</p>
+  <div class="pub" id="vr-keylogging">
+    <p class="pub-title"><a href="https://www.usenix.org/conference/usenixsecurity24/presentation/su-zihao">Remote Keylogging Attacks in Multi-user VR Applications</a></p>
     <p class="pub-authors"><span class="me">Zihao Su</span>, Kunlin Cai, Reuben Beeler, Lukas Dresel, Allan Garcia, Ilya Grishchenko, Yuan Tian, Christopher Kruegel, Giovanni Vigna</p>
     <p class="pub-meta">
       <span class="tag">USENIX Security 2024</span>
       <span>33rd USENIX Security Symposium</span>
+    </p>
+    <p class="pub-impact"><strong>Impact:</strong> Valve’s SteamVR and Rec Room implemented our recommended defenses; Rec Room awarded a bug bounty.</p>
+    <p class="pub-impact">
+      <a href="https://store.steampowered.com/news/posts/?appgroupname=SteamVR&amp;appids=250820&amp;enddate=1728412551&amp;feed=steam_community_announcements">SteamVR 2.7 release notes (July 30, 2024)</a> ·
+      <a href="https://store.steampowered.com/news/posts/?appgroupname=Rec+Room&amp;appids=471710&amp;enddate=1723518215&amp;feed=steam_community_announcements">Rec Room release notes (July 29, 2024)</a> ·
+      <a href="https://www.usenix.org/system/files/usenixsecurity24_slides-su-zihao.pdf#page=48">Talk slides (PDF)</a>
     </p>
   </div>
 
@@ -82,7 +109,7 @@
 
   <div class="pub">
     <p class="pub-title">CHKPLUG: Checking GDPR Compliance of WordPress Plugins via Cross-language Code Property Graph</p>
-    <p class="pub-authors">Faysal Hossain Shezan, <span class="me">Zihao Su</span>, Mingqing Kang, Nicolas Phair, Patrick William Thomas, Michelangelo van Dam, Yinzhi Cao, Yuan Tian</p>
+    <p class="pub-authors">Faysal Hossain Shezan, <span class="me">Zihao Su</span>, Mingqing Kang, Nicholas Phair, Patrick William Thomas, Michelangelo van Dam, Yinzhi Cao, Yuan Tian</p>
     <p class="pub-meta">
       <span class="tag">NDSS 2023</span>
       <span>Network and Distributed System Security Symposium</span>
@@ -96,18 +123,6 @@
       <span class="tag">CHI EA 2021</span>
       <span>Extended Abstracts</span>
     </p>
-  </div>
-
-  <h2>News</h2>
-  <!-- Keep the three or four most recent items only; prune from the bottom. -->
-  <div class="entry">
-    <div class="entry-head"><h3>Awarded an NSF ACCESS Research allocation &mdash; 200,000 ACCESS credits, as Co-PI</h3><span class="when">2026</span></div>
-  </div>
-  <div class="entry">
-    <div class="entry-head"><h3>Honorable Mention Award at CHI 2025 for “Your Hands Can Tell”</h3><span class="when">2025</span></div>
-  </div>
-  <div class="entry">
-    <div class="entry-head"><h3>NAIRR Pilot award — $20,000 in cloud credits via CloudBank</h3><span class="when">2024</span></div>
   </div>
 
 </main>
